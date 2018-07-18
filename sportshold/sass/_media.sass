@@ -1,0 +1,271 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.main-header
+			.header-content
+				padding: 85px 0
+				.banner-img
+					img
+						position: absolute
+						left: -5%
+						top: -20px
+						width: 50%
+				.h3
+					color: $dark-btn
+					margin: 0 0 18px	
+					padding: 0
+				.h1
+					font-size: 64px
+				.h2
+					color: $accent
+					margin: 0 0 36px
+					padding: 0
+				p
+					margin: 0 0 37px
+				.button
+					padding: 18px 47px
+
+	.shares
+		&-mini-banners
+			.premium
+				&-sneakers
+					margin-top: 42px
+					&-left
+						img
+							width: 100px
+					&-right
+						img
+							width: 100px
+
+	.products
+		&-card
+			&-img
+				img
+					width: 160px
+					height: 160px
+
+// ≥992px
++media-breakpoint-down(md)
+	.main-header
+		.top-nav-bar
+			&_left-menu
+				ul
+					li
+						display: inline-block
+						margin-right: 15px
+						&:last-child
+							margin: 0
+			&_right-menu
+				&_price
+					padding-right: 0px
+					text-decoration: none
+					.icon-shopping-bag
+						margin-right: 0px
+					span
+						color: #dcc5b8
+				.button
+					padding: 20px 8px
+		.nav-bar
+			&_menu
+				display: none
+				float: right
+				min-width: 255px
+				text-align: right
+				background-color: $accent
+				top: 40px
+				position: relative
+				position: absolute
+				right: 15px
+				z-index: 2
+				li
+					display: block
+					line-height: 0
+					padding: 0
+					a
+						display: block
+						line-height: 48px
+						padding: 0 20px
+						font-size: 16px
+						transition: all .5s ease
+						&:hover
+							background-color: #472424
+							color: $white
+							&::before
+								display: none
+		.header-content
+			.banner-img
+				display: none
+
+	.shares
+		.arrivals
+			margin-top: 30px
+		&-mini-banners
+			margin-top: 30px
+			.athletes
+				height: 540px
+				margin-bottom: 30px
+				background-size: 200%
+				background-position: 30% 80%
+				.h3
+					padding-top: 400px
+
+	.products
+		&-card
+			&-img
+				img
+					width: 200px
+					height: 200px
+
+	.partners
+		img
+			margin-bottom: 50px
+
+	.main-footer
+		.advantages
+			&-item
+				margin-bottom: 30px
+				&:nth-child(4), &:nth-child(5), &:nth-child(6)
+					margin-bottom: 0
+		.footer-menu
+			&-item
+				&:nth-child(4), &:nth-child(5)
+					margin-top: 30px
+
+// ≥768px
++media-breakpoint-down(sm)
+	.main-header
+		.top-nav-bar
+			text-align: center
+			&_left-menu
+				ul
+					li
+						margin-right: 40px
+						&:last-child
+							margin: 0
+			&_right-menu
+				text-align: center
+				&_price
+					padding-right: 20px
+					.icon-shopping-bag
+						margin-right: 10px
+
+	.products
+		&-card
+			&-img
+				img
+					width: 160px
+					height: 160px
+
+	.support
+		&-text
+		&-button
+			text-align: left
+			margin-top: 30px
+
+	.main-footer
+		.advantages
+			&-item
+				margin-bottom: 50px !important
+				&:nth-child(5), &:nth-child(6)
+		.footer-menu
+			&-item
+				&:nth-child(3), &:nth-child(4), &:nth-child(5)
+					margin-top: 30px
+		.footer-end
+			.copyright
+				margin: 30px 0
+				text-align: left
+			.soc
+				text-align: left
+
+// ≥576px
++media-breakpoint-down(xs)
+	.main-header
+		.top-nav-bar
+			text-align: center
+			&_left-menu
+				ul
+					li
+						margin-right: 3px
+						&:last-child
+							margin: 0
+			&_right-menu
+				text-align: center
+				&_price
+					padding-right: 0
+					display: block
+					.icon-shopping-bag
+						margin-right: 5px
+				.button
+					padding: 20px 18px
+		.header-content
+			padding: 50px 0
+	
+	.shares
+		.kyrie
+			.mini-logo
+				left: 1%
+			.kyrie-kross
+				display: none
+
+	.shares
+		&-mini-banners
+			.athletes
+				height: 400px
+				background-repeat: no-repeat
+				.h3
+					padding-top: 300px
+		.arrivals
+			text-align: right
+			&-img
+				height: 100%
+				position: absolute
+				left: -15px
+				top: 0
+				img
+					height: 100%
+
+	.products
+		&-card
+			&-img
+				img
+					width: 200px
+					height: 200px
+
+	.main-footer
+		.advantages
+			p
+				margin-top: 15px
+			&-item
+				margin-bottom: 50px !important
+				&:last-child
+					margin-bottom: 0 !important
+		.footer-menu
+			&-item
+				margin-top: 30px
+				&:first-child
+					margin-top: 0
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+	.menu-link
+		display: none
+	.nav-bar_menu
+		display: block !important
+	a
+		outline: none !important
+
+// ≤1200px
++media-breakpoint-up(xl)
