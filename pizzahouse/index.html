@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Пицца на дом</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+	<div class="preloader"><div class="pulse"></div></div>
+
+	<header class="main-header" style="background-image: url(img/bg.jpg)">
+		<div class="navigation">
+			<div class="container">
+				<div class="row align-items-center">
+
+					<div class="col-xl-2 col-lg-3 col-6">
+						<div class="logo">
+							<div class="logo_img">
+								<img src="img/logo.svg" alt="Пицца на дом">
+							</div>
+							<!-- /.logo_img -->
+							<div class="logo_text">
+								<span class="logo_text__accent">Пицца</span>на дом
+							</div>
+							<!-- /.logo_text -->
+						</div>
+					</div>
+
+					<div class="col-xl-7 col-lg-6">
+						<nav class="menu">
+							<ul class="menu_list">
+								<li class="active"><a href="#"><i class="icon-angle-right"></i>Начало</a></li>
+								<li><a href="#" class="scroll_pizza"><i class="icon-angle-right"></i>Выбрать пиццу</a></li>
+								<li><a href="#" class="scroll_salat"><i class="icon-angle-right"></i>Выбрать салат</a></li>
+								<li><a href="#" class="scroll_drink"><i class="icon-angle-right"></i>Выбрать напитки</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="col-xl-3 col-lg-3 col-6">
+						<div class="contact-phone">
+							<div class="contact-phone_text">Заказать по телефону:</div>
+							<!-- /.contact-phone_text -->
+							<a href="tel:+74959323574" class="contact-phone_number">
+								<i class="icon-phone"></i>+7 (495) <span class="contact-phone_number__biggest">923-35-74</span>
+							</a>
+							<!-- /.contact-phone_number -->
+						</div>
+						<!-- /.contact-phone -->
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- /.navigation -->
+		<div class="header-content">
+			<div class="container">
+				<div class="header-slider-wrapper owl-carousel">
+					<div class="row align-items-center header-slider">
+						
+						<div class="col-md-4 offset-sm-1">
+							
+							<div class="header-slider_text">
+								<h1 class="h1">Пицца<br>Неаполитана</h1>
+								<p class="header-slider_text__descr">Великолепная, пикантная, горячая итальянская пицца с аппетитным французским сыром.</p>
+								<a href="#" class="button" id="neapolitanaHeader"><i class="icon-ok"></i>Выбрать</a>
+							</div>
+							<!-- /.header-slider_text -->
+
+						</div>
+
+						<div class="col-md-6">
+							
+							<div class="header-slider_img">
+								<img src="img/neapolitana.png" alt="Пицца Неополитана">
+							</div>
+							<!-- /.header-slider-img -->
+
+						</div>
+
+					</div>
+					<!-- /.row.align-items-center.header-slider -->
+					<div class="row align-items-center header-slider">
+						
+						<div class="col-md-4 offset-sm-1">
+							
+							<div class="header-slider_text">
+								<h1 class="h1">Пицца<br>Пепперони</h1>
+								<p class="header-slider_text__descr">Манящая, свежая, аппетитная классическая Пепперони скрасит любой вечер в любой компании.</p>
+								<a href="#" class="button" id="peperoniHeader"><i class="icon-ok"></i>Выбрать</a>
+							</div>
+							<!-- /.header-slider_text -->
+
+						</div>
+
+						<div class="col-md-6">
+							
+							<div class="header-slider_img">
+								<img src="img/pepperony.png" alt="Пицца Неополитана">
+							</div>
+							<!-- /.header-slider-img -->
+
+						</div>
+
+					</div>
+					<!-- /.row.align-items-center.header-slider -->
+					<div class="row align-items-center header-slider">
+						
+						<div class="col-md-4 offset-sm-1">
+							
+							<div class="header-slider_text">
+								<h1 class="h1">Пицца<br>Тропикана</h1>
+								<p class="header-slider_text__descr">Манящая, свежая, аппетитная классическая Тропикана скрасит любой вечер в любой компании.</p>
+								<a href="#" class="button" id="tropicaHeader"><i class="icon-ok"></i>Выбрать</a>
+							</div>
+							<!-- /.header-slider_text -->
+
+						</div>
+
+						<div class="col-md-6">
+							
+							<div class="header-slider_img">
+								<img src="img/tropicana.png" alt="Пицца Неополитана">
+							</div>
+							<!-- /.header-slider-img -->
+
+						</div>
+
+					</div>
+					<!-- /.row.align-items-center.header-slider -->
+				</div>
+				<!-- /.slider-wrapper -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.header-content -->
+	</header>
+
+	<section class="choose-pizza section__white">
+		<div class="container choose-pizza_top">
+			<div class="row">
+				
+				<div class="col-12">
+					<div class="head-section">
+						<a href="#" class="head-section_button-scroll"><i class="icon-angle-double-down"></i></a>
+						<h3 class="h3">Выбрать пиццу</h3>
+					</div>
+				</div>
+
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				
+				<div class="col-lg-4">
+					<div class="pizza" id="neapolitanaBlock">
+						
+						<div class="pizza_img" style="background-image: url(img/flour.jpg);">
+							<img src="img/neapolitana.png" alt="Пицца Неаполитана">
+							<div class="pizza_img__size">
+								<span class="pizza_img__size-26 active" id="neapolitana26">26</span>
+								<span class="pizza_img__size-32" id="neapolitana32">32</span>
+							</div>
+							<div class="pizza_img__price" neapolitanaPrice><span id="neapolitanaPrice">920</span> <span>руб.</span></div>
+						</div>
+
+						<h4 class="h4 pizza_title">Пицца Неаполитана, <span id="neapolitanaSize">26</span> см</h4>
+
+						<p class="pizza_descr">Манящая, свежая, аппетитная классическая Неаполитана скрасит любой вечер в любой компании.</p>
+
+						<p class="pizza_composition"><span>Состав:</span> сыр, грибы, чеснок, острый перец, еще длинное наименование</p>
+
+						<div class="button-wrapper">
+							<a href="#" class="button" id="neapolitanaChoose"><i class="icon-ok"></i>Выбрать</a>
+							<input type="number" max="10" placeholder="_" neapolitanaAmount>
+						</div>
+
+					</div>
+					<!-- /.pizza -->
+				</div>
+
+				<div class="col-lg-4">
+					<div class="pizza" id="peperoniBlock">
+						
+						<div class="pizza_img" style="background-image: url(img/flour.jpg);">
+							<img src="img/pepperony.png" alt="Пицца Пеперони">
+							<div class="pizza_img__size">
+								<span class="pizza_img__size-26 active" id="peperoni26">26</span>
+								<span class="pizza_img__size-32" id="peperoni32">32</span>
+							</div>
+							<div class="pizza_img__price" peperoniPrice><span id="peperoniPrice">675</span> <span>руб.</span></div>
+						</div>
+
+						<h4 class="h4 pizza_title">Пицца Пепперони, <span id="peperoniSize">26</span> см</h4>
+
+						<p class="pizza_descr">Манящая, свежая, аппетитная классическая Пепперони скрасит любой вечер в любой компании.</p>
+
+						<p class="pizza_composition"><span>Состав:</span> сыр, грибы, чеснок, острый перец, еще длинное наименование</p>
+
+						<div class="button-wrapper">
+							<a href="#" class="button" id="peperoniChoose"><i class="icon-ok"></i>Выбрать</a>
+							<input type="number" max="10" placeholder="_" peperoniAmount>
+						</div>
+
+					</div>
+					<!-- /.pizza -->
+				</div>
+
+				<div class="col-lg-4">
+					<div class="pizza" id="tropicaBlock">
+						
+						<div class="pizza_img" style="background-image: url(img/flour.jpg);">
+							<img src="img/tropicana.png" alt="Пицца Тропикана">
+							<div class="pizza_img__size">
+								<span class="pizza_img__size-26 active" id="tropica26">26</span>
+								<span class="pizza_img__size-32" id="tropica32">32</span>
+							</div>
+							<div class="pizza_img__price" tropicaPrice><span id="tropicaPrice">565</span> <span>руб.</span></div>
+						</div>
+
+						<h4 class="h4 pizza_title">Пицца Тропикана, <span id="tropicaSize">26</span> см</h4>
+
+						<p class="pizza_descr">Манящая, свежая, аппетитная классическая Тропикана скрасит любой вечер в любой компании.</p>
+
+						<p class="pizza_composition"><span>Состав:</span> сыр, грибы, чеснок, острый перец, еще длинное наименование</p>
+
+						<div class="button-wrapper">
+							<a href="#" class="button" id="tropicaChoose"><i class="icon-ok"></i>Выбрать</a>
+							<input type="number" max="10" placeholder="_" tropicaAmount>
+						</div>
+
+					</div>
+					<!-- /.pizza -->
+				</div>
+
+			</div>
+		</div>
+		<!-- /.container choose-pizza_top -->
+	</section>
+	<!-- /.choose-pizza -->
+
+	<section class="choose-salat section__dark" style="background-image: url(img/salat.jpg);">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-12">
+					<div class="head-section">
+						<a href="#" class="head-section_button-scroll"><i class="icon-angle-double-down"></i></a>
+						<h3 class="h3">Выбрать салат</h3>
+						<p>Не забудьте выбрать свежие закуски и салаты от нашего шеф-повара,<br>которые гармонично дополнят ваше меню сегодня.</p>
+					</div>
+				</div>
+
+			</div>
+			<!-- /.row -->
+
+				<div class="row salat-slider">
+
+					<div class="col-xl-3">
+						<div class="salat">
+							
+							<div class="salat_img" style="background-image: url(img/salat.jpg);">
+								<div class="salat_img__price"><span id="greekPrice">240</span> <span>р.</span><br>100 <span>гр.</span></div>
+							</div>
+							<!-- /.salat_img -->
+
+							<h4 class="h4 salat_title">Салат греческий</h4>
+							<!-- /.h4 salat_title -->
+
+							<p class="salat_descr">Лучшее дополнение к любому столу из свежих овощей</p>
+
+							<p class="salat_composition"><span>Состав:</span> сыр, грибы, чеснок, острый перец, еще длинное наименование</p>
+
+							<div class="button-wrapper">
+								<a href="#" class="button" id="greekChoose"><i class="icon-ok"></i>Выбрать</a>
+								<input type="number" max="10" placeholder="_" greekAmount>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-xl-3">
+						<div class="salat">
+							
+							<div class="salat_img" style="background-image: url(img/salat1.jpg);">
+								<div class="salat_img__price"><span id="montecristoPrice">180</span> <span>р.</span><br>100 <span>гр.</span></div>
+							</div>
+							<!-- /.salat_img -->
+
+							<h4 class="h4 salat_title">Салат монтекристо</h4>
+							<!-- /.h4 salat_title -->
+
+							<p class="salat_descr">Лучшее дополнение к любому столу из свежих овощей</p>
+
+							<p class="salat_composition"><span>Состав:</span> сыр, грибы, чеснок, острый перец, еще длинное наименование</p>
+
+							<div class="button-wrapper">
+								<a href="#" class="button" id="montecristoChoose"><i class="icon-ok"></i>Выбрать</a>
+								<input type="number" max="10" placeholder="_" montecristoAmount>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-xl-3">
+						<div class="salat">
+							
+							<div class="salat_img" style="background-image: url(img/salat3.jpg);">
+								<div class="salat_img__price"><span id="olivePrice">155</span> <span>р.</span><br>100 <span>гр.</span></div>
+							</div>
+							<!-- /.salat_img -->
+
+							<h4 class="h4 salat_title">Салат оливье</h4>
+							<!-- /.h4 salat_title -->
+
+							<p class="salat_descr">Лучшее дополнение к любому столу из свежих овощей</p>
+
+							<p class="salat_composition"><span>Состав:</span> сыр, грибы, чеснок, острый перец, еще длинное наименование</p>
+
+							<div class="button-wrapper">
+								<a href="#" class="button" id="oliveChoose"><i class="icon-ok"></i>Выбрать</a>
+								<input type="number" max="10" placeholder="_" oliveAmount>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-xl-3">
+						<div class="salat">
+							
+							<div class="salat_img" style="background-image: url(img/salat2.jpg);">
+								<div class="salat_img__price"><span id="masqueradePrice">215</span> <span>р.</span><br>100 <span>гр.</span></div>
+							</div>
+							<!-- /.salat_img -->
+
+							<h4 class="h4 salat_title">Салат Маскарад</h4>
+							<!-- /.h4 salat_title -->
+
+							<p class="salat_descr">Лучшее дополнение к любому столу из свежих овощей</p>
+
+							<p class="salat_composition"><span>Состав:</span> сыр, грибы, чеснок, острый перец, еще длинное наименование</p>
+
+							<div class="button-wrapper">
+								<a href="#" class="button" id="masqueradeChoose"><i class="icon-ok"></i>Выбрать</a>
+								<input type="number" max="10" placeholder="_" masqueradeAmount>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+				<!-- /.row salat-slider -->
+
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.choose-salat section__dark -->
+
+	<section class="choose-drink section__white">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12">
+					<div class="head-section">
+						<a href="#" class="head-section_button-scroll"><i class="icon-angle-double-down"></i></a>
+						<h3 class="h3">Выбрать напитки</h3>
+						<p>Что может быть лучше освежающего газированного напитка в<br>дополнение к горячей ароматной пицце.</p>
+					</div>
+					<!-- /.head-section -->
+				</div>
+				<!-- /.col-12 -->
+
+			</div>
+			<!-- /.row -->
+
+			<div class="row">
+				
+				<div class="offset-xl-2 col-xl-2 col-md-4">
+					<div class="bottle">
+
+						<div class="bottle_img">
+							<img src="img/cocacola.png" alt="Кока-Кола">
+						</div>
+						<!-- /.bottle_img -->
+
+						<div class="bottle_title">
+							<h4 class="h4">Кока-кола, 1,5 л.</h4>
+						</div>
+						<!-- /.bottle_title -->
+
+						<div class="bottle_price"><span id="cocacolaPrice">130</span> руб.</div>
+						<!-- /.bottle_price -->
+
+						<div class="button-wrapper">
+							<a href="#" class="button" id="cocacolaChoose"><i class="icon-ok"></i>Выбрать</a>
+							<input type="number" max="10" placeholder="_" cocacolaAmount>
+						</div>
+
+					</div>
+					<!-- /.bottle -->
+				</div>
+
+				<div class="offset-xl-1 col-xl-2 col-md-4">
+					<div class="bottle">
+
+						<div class="bottle_img">
+							<img src="img/sprite.png" alt="Спрайт">
+						</div>
+						<!-- /.bottle_img -->
+
+						<div class="bottle_title">
+							<h4 class="h4">Спрайт, 1,5 л.</h4>
+						</div>
+						<!-- /.bottle_title -->
+
+						<div class="bottle_price"><span id="spritePrice">130</span> руб.</div>
+						<!-- /.bottle_price -->
+
+						<div class="button-wrapper">
+							<a href="#" class="button" id="spriteChoose"><i class="icon-ok"></i>Выбрать</a>
+							<input type="number" max="10" placeholder="_" spriteAmount>
+						</div>
+
+					</div>
+					<!-- /.bottle -->
+				</div>
+
+				<div class="offset-xl-1 col-xl-2 col-md-4">
+					<div class="bottle">
+
+						<div class="bottle_img">
+							<img src="img/schweppes.png" alt="Швепс">
+						</div>
+						<!-- /.bottle_img -->
+
+						<div class="bottle_title">
+							<h4 class="h4">Швепс, 1,5 л.</h4>
+						</div>
+						<!-- /.bottle_title -->
+
+						<div class="bottle_price"><span id="schweppesPrice">140</span> руб.</div>
+						<!-- /.bottle_price -->
+
+						<div class="button-wrapper">
+							<a href="#" class="button" id="schweppesChoose"><i class="icon-ok"></i>Выбрать</a>
+							<input type="number" max="10" placeholder="_" schweppesAmount>
+						</div>
+
+					</div>
+					<!-- /.bottle -->
+				</div>
+
+			</div>
+			<!-- /.row -->
+
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.choose-drink section__white -->
+
+	<section class="section-info section__dark" style="background-image: url(img/flour.jpg);">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12">
+					<div class="head-section">
+						<a href="#" class="head-section_button-scroll"><i class="icon-angle-double-down"></i></a>
+						<h3 class="h3">Доставка и оплата</h3>
+						<p>Не зависимо от того, какой сейчас час, какая погода и как далеко вы<br>живете - наша оперативная доставка с радостью привезет вам заказ<br>в любое время и по любому адресу г. Москвы.</p>
+					</div>
+					<!-- /.head-section -->
+				</div>
+				<!-- /.col-12 -->
+
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.section-info section__dark -->
+
+	<section class="section-delivery section__white">
+		<div class="container">
+			<div class="row align-items-center">
+
+				<div class="col-lg-7">
+					
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="delivery-head">
+								<h3 class="h3">Адрес и время доставки</h3>
+								<p class="delivery-head_descr">Пожалуйста, выберите удобную дату и время доставки, введите ваш полный адрес и телефон, чтобы мы могли убедиться в том, что ваш заказ нашел вас:</p>
+							</div>
+						</div>
+					</div>
+					<!-- /.row -->
+
+					<div class="row justify-content-between delivery_form">
+
+						<div class="col-lg-6">
+							<div class="delivery_descr">
+								<label for="delivery-data">Дата доставки:</label>
+								<input name="delivery-data" type="text" placeholder="Введите дату доставки">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="delivery_descr">
+								<label for="delivery-time">Время доставки:</label>
+								<input name="delivery-time" type="text" placeholder="Введите время доставки">
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="delivery_descr">
+								<label for="delivery-name">Ваше имя:</label>
+								<input name="delivery-name" type="text" placeholder="Введите ваше имя">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="delivery_descr">
+								<label for="delivery-phone">Ваш телефон:</label>
+								<input name="delivery-phone" type="text" placeholder="Введите ваш телефон">
+							</div>
+						</div>
+
+						<div class="col-lg-12">
+							<div class="delivery_descr">
+								<label for="delivery-address">Адрес доставки:</label>
+								<input name="delivery-address" type="text" placeholder="Введите ваш адресс">
+							</div>
+						</div>
+
+						<div class="col-lg-12">
+							<div class="delivery_descr">
+								<label for="delivery-comment">Комментарий к заказу:</label>
+								<textarea name="delivery-comment"></textarea>
+							</div>
+						</div>
+
+					</div>
+					<!-- /.row justify-content-between -->
+
+				</div>
+
+				<div class="col-lg-5 bill-wrapper">
+					<div class="bill">
+						
+						<h2 class="h2 bill_title">
+							Ваш <span class="bill_title__accent">заказ</span>
+						</h2>
+						<!-- /.bill_title -->
+
+						<ul class="bill_list"></ul>
+						<!-- /.bill_list -->
+
+						<h3 class="h3 bill_price">Итого: <span class="bill_price__accent"><span id="final-price">0</span> руб.</span></h3>
+						<!-- /.bill_price -->
+
+						<div class="bill_ordering">
+							<a href="#" class="button button-o">&times; <span class="bill_ordering_reset">Сбросить</span></a>
+							<a href="#" class="button" id="checkout"><i class="icon-ok"></i>Оформить</a>
+						</div>
+						<!-- /.bill_ordering -->
+
+					</div>
+					<!-- /.bill -->
+				</div>
+				<!-- /.bill-wrapper -->
+
+			</div>
+			<!-- /.row align-items-center -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.section-delivery -->
+
+	<footer class="main-footer" style="background-image: url(img/flour.jpg);">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-lg-3 col-sm-6">
+					<div class="about-company">
+						
+						<h4 class="h4 about-company_title">Пицца на дом</h4>
+						<!-- /.h4 about-company_title -->
+
+						<p class="about-company_descr">Моментальная доставка свежей горячей пиццы прямо к вам домой или в офис.</p>
+						<!-- /.about-company_descr -->
+
+						<ul class="about-company_contacts">
+							<li class="about-company_contacts_item"><a href="mailto:pizzanadom@yandex.ru"><i class="icon-mail"></i>pizzanadom@yandex.ru</a></li>
+							<!-- /.about-company_contacts_item -->
+							<li class="about-company_contacts_item"><a href="79999999999"><i class="icon-phone"></i>+7 (999) 999-99-99</a></li>
+							<!-- /.about-company_contacts_item -->
+							<li class="about-company_contacts_item"><a href="#"><i class="icon-location"></i>Москва, Коломенское ш., дом 46а, оф. 345</a></li>
+							<!-- /.about-company_contacts_item -->
+						</ul>
+						<!-- /.about-company_contacts -->
+
+					</div>
+					<!-- /.about-company -->
+				</div>
+
+				<div class="col-lg-3 col-sm-6">
+					<div class="order">
+						
+						<h4 class="h4 order_title">Заказать:</h4>
+						<!-- /.h4 order_title -->
+
+						<nav class="menu order_menu">
+							<ul class="menu_list">
+								<li><a href="#" class="scroll_header"><i class="icon-angle-right"></i>Начало</a></li>
+								<li><a href="#" class="scroll_pizza"><i class="icon-angle-right"></i>Выбрать пиццу</a></li>
+								<li><a href="#" class="scroll_salat"><i class="icon-angle-right"></i>Выбрать салат</a></li>
+								<li><a href="#" class="scroll_drink"><i class="icon-angle-right"></i>Выбрать напитки</a></li>
+							</ul>
+						</nav>
+						<!-- /.menu -->
+
+						<a href="#" class="button" id="sweetForm">Отправить заявку</a>
+
+					</div>
+					<!-- /.order -->
+				</div>
+
+				<div class="col-lg-4 col-sm-8">
+					<div class="gallery">
+						
+						<h4 class="h4 gallery_title">Галерея instagram:</h4>
+						<!-- /.h4 gallery_title -->
+
+						<a href="https://www.instagram.com" class="gallery_item" style="background-image: url(img/salat.jpg)"></a>
+						<!-- /.gallery_item -->
+						<a href="https://www.instagram.com" class="gallery_item" style="background-image: url(img/salat1.jpg)"></a>
+						<!-- /.gallery_item -->
+						<a href="https://www.instagram.com" class="gallery_item" style="background-image: url(img/salat2.jpg)"></a>
+						<!-- /.gallery_item -->
+						<a href="https://www.instagram.com" class="gallery_item" style="background-image: url(img/salat3.jpg)"></a>
+						<!-- /.gallery_item -->
+						<a href="https://www.instagram.com" class="gallery_item" style="background-image: url(img/salat.jpg)"></a>
+						<!-- /.gallery_item -->
+						<a href="https://www.instagram.com" class="gallery_item" style="background-image: url(img/salat1.jpg)"></a>
+						<!-- /.gallery_item -->
+						<a href="https://www.instagram.com" class="gallery_item" style="background-image: url(img/salat2.jpg)"></a>
+						<!-- /.gallery_item -->
+						<a href="https://www.instagram.com" class="gallery_item" style="background-image: url(img/salat3.jpg)"></a>
+						<!-- /.gallery_item -->
+						<a href="https://www.instagram.com" class="gallery_item" style="background-image: url(img/salat.jpg)"></a>
+						<!-- /.gallery_item -->
+						<a href="https://www.instagram.com" class="gallery_item" style="background-image: url(img/salat1.jpg)"></a>
+						<!-- /.gallery_item -->
+						<a href="https://www.instagram.com" class="gallery_item" style="background-image: url(img/salat2.jpg)"></a>
+						<!-- /.gallery_item -->
+						<a href="https://www.instagram.com" class="gallery_item" style="background-image: url(img/salat3.jpg)"></a>
+						<!-- /.gallery_item -->
+
+					</div>
+					<!-- /.gallery -->
+				</div>
+
+				<div class="col-lg-2 col-sm-4">
+					<div class="soc">
+						
+						<h4 class="h4 soc_title">Мы в соц. сетях</h4>
+						<!-- /.h4 soc_title -->
+
+						<ul class="soc_list">
+							<li><a href="http://facebook.com"><i class="icon-facebook"></i>Facebook</a></li>
+							<li><a href="http://twitter.com/"><i class="icon-twitter"></i>Twitter</a></li>
+							<li><a href="http://vk.com"><i class="icon-vkontakte"></i>Вконтакте</a></li>
+							<li><a href="http://linkedin.com"><i class="icon-linkedin"></i>Linkedin</a></li>
+						</ul>
+
+					</div>
+					<!-- /.soc -->
+				</div>
+
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</footer>
+	<!-- /.main-footer -->
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
