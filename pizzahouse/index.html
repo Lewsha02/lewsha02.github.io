@@ -184,7 +184,7 @@
 								<span class="pizza_img__size-26 active" id="neapolitana26">26</span>
 								<span class="pizza_img__size-32" id="neapolitana32">32</span>
 							</div>
-							<div class="pizza_img__price" neapolitanaPrice><span id="neapolitanaPrice">920</span> <span>руб.</span></div>
+							<div class="pizza_img__price" id="neapolitanaPWrap"><span id="neapolitanaPrice">920</span><span>руб.</span></div>
 						</div>
 
 						<h4 class="h4 pizza_title">Пицца Неаполитана, <span id="neapolitanaSize">26</span> см</h4>
@@ -195,7 +195,7 @@
 
 						<div class="button-wrapper">
 							<a href="#" class="button" id="neapolitanaChoose"><i class="icon-ok"></i>Выбрать</a>
-							<input type="number" max="10" placeholder="_" neapolitanaAmount>
+							<input type="number" max="10" placeholder="_" id="neapolitanaAmount">
 						</div>
 
 					</div>
@@ -211,7 +211,7 @@
 								<span class="pizza_img__size-26 active" id="peperoni26">26</span>
 								<span class="pizza_img__size-32" id="peperoni32">32</span>
 							</div>
-							<div class="pizza_img__price" peperoniPrice><span id="peperoniPrice">675</span> <span>руб.</span></div>
+							<div class="pizza_img__price" id="peperoniPWrap"><span id="peperoniPrice">675</span> <span>руб.</span></div>
 						</div>
 
 						<h4 class="h4 pizza_title">Пицца Пепперони, <span id="peperoniSize">26</span> см</h4>
@@ -222,7 +222,7 @@
 
 						<div class="button-wrapper">
 							<a href="#" class="button" id="peperoniChoose"><i class="icon-ok"></i>Выбрать</a>
-							<input type="number" max="10" placeholder="_" peperoniAmount>
+							<input type="number" max="10" placeholder="_" id="peperoniAmount">
 						</div>
 
 					</div>
@@ -238,7 +238,7 @@
 								<span class="pizza_img__size-26 active" id="tropica26">26</span>
 								<span class="pizza_img__size-32" id="tropica32">32</span>
 							</div>
-							<div class="pizza_img__price" tropicaPrice><span id="tropicaPrice">565</span> <span>руб.</span></div>
+							<div class="pizza_img__price" id="tropicaPWrap"><span id="tropicaPrice">565</span> <span>руб.</span></div>
 						</div>
 
 						<h4 class="h4 pizza_title">Пицца Тропикана, <span id="tropicaSize">26</span> см</h4>
@@ -249,7 +249,7 @@
 
 						<div class="button-wrapper">
 							<a href="#" class="button" id="tropicaChoose"><i class="icon-ok"></i>Выбрать</a>
-							<input type="number" max="10" placeholder="_" tropicaAmount>
+							<input type="number" max="10" placeholder="_" id="tropicaAmount">
 						</div>
 
 					</div>
@@ -296,7 +296,7 @@
 
 							<div class="button-wrapper">
 								<a href="#" class="button" id="greekChoose"><i class="icon-ok"></i>Выбрать</a>
-								<input type="number" max="10" placeholder="_" greekAmount>
+								<input type="number" max="10" placeholder="_" id="greekAmount">
 							</div>
 
 						</div>
@@ -319,7 +319,7 @@
 
 							<div class="button-wrapper">
 								<a href="#" class="button" id="montecristoChoose"><i class="icon-ok"></i>Выбрать</a>
-								<input type="number" max="10" placeholder="_" montecristoAmount>
+								<input type="number" max="10" placeholder="_" id="montecristoAmount">
 							</div>
 
 						</div>
@@ -342,7 +342,7 @@
 
 							<div class="button-wrapper">
 								<a href="#" class="button" id="oliveChoose"><i class="icon-ok"></i>Выбрать</a>
-								<input type="number" max="10" placeholder="_" oliveAmount>
+								<input type="number" max="10" placeholder="_" id="oliveAmount">
 							</div>
 
 						</div>
@@ -365,7 +365,7 @@
 
 							<div class="button-wrapper">
 								<a href="#" class="button" id="masqueradeChoose"><i class="icon-ok"></i>Выбрать</a>
-								<input type="number" max="10" placeholder="_" masqueradeAmount>
+								<input type="number" max="10" placeholder="_" id="masqueradeAmount">
 							</div>
 
 						</div>
@@ -416,7 +416,7 @@
 
 						<div class="button-wrapper">
 							<a href="#" class="button" id="cocacolaChoose"><i class="icon-ok"></i>Выбрать</a>
-							<input type="number" max="10" placeholder="_" cocacolaAmount>
+							<input type="number" max="10" placeholder="_" id="cocacolaAmount">
 						</div>
 
 					</div>
@@ -441,7 +441,7 @@
 
 						<div class="button-wrapper">
 							<a href="#" class="button" id="spriteChoose"><i class="icon-ok"></i>Выбрать</a>
-							<input type="number" max="10" placeholder="_" spriteAmount>
+							<input type="number" max="10" placeholder="_" id="spriteAmount">
 						</div>
 
 					</div>
@@ -466,7 +466,7 @@
 
 						<div class="button-wrapper">
 							<a href="#" class="button" id="schweppesChoose"><i class="icon-ok"></i>Выбрать</a>
-							<input type="number" max="10" placeholder="_" schweppesAmount>
+							<input type="number" max="10" placeholder="_" id="schweppesAmount">
 						</div>
 
 					</div>
@@ -523,40 +523,40 @@
 						<div class="col-lg-6">
 							<div class="delivery_descr">
 								<label for="delivery-data">Дата доставки:</label>
-								<input name="delivery-data" type="text" placeholder="Введите дату доставки">
+								<input id="delivery-data" type="text" placeholder="Введите дату доставки">
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="delivery_descr">
 								<label for="delivery-time">Время доставки:</label>
-								<input name="delivery-time" type="text" placeholder="Введите время доставки">
+								<input id="delivery-time" type="text" placeholder="Введите время доставки">
 							</div>
 						</div>
 
 						<div class="col-lg-6">
 							<div class="delivery_descr">
 								<label for="delivery-name">Ваше имя:</label>
-								<input name="delivery-name" type="text" placeholder="Введите ваше имя">
+								<input id="delivery-name" type="text" placeholder="Введите ваше имя">
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="delivery_descr">
 								<label for="delivery-phone">Ваш телефон:</label>
-								<input name="delivery-phone" type="text" placeholder="Введите ваш телефон">
+								<input id="delivery-phone" type="text" placeholder="Введите ваш телефон">
 							</div>
 						</div>
 
 						<div class="col-lg-12">
 							<div class="delivery_descr">
 								<label for="delivery-address">Адрес доставки:</label>
-								<input name="delivery-address" type="text" placeholder="Введите ваш адресс">
+								<input id="delivery-address" type="text" placeholder="Введите ваш адресс">
 							</div>
 						</div>
 
 						<div class="col-lg-12">
 							<div class="delivery_descr">
 								<label for="delivery-comment">Комментарий к заказу:</label>
-								<textarea name="delivery-comment"></textarea>
+								<textarea id="delivery-comment"></textarea>
 							</div>
 						</div>
 
