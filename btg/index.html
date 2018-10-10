@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <title>Корпоративный сайт</title>
+    <style> @font-face{font-family:'Roboto-reg';src:url('../fonts/Roboto-Regular.eot');src:url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'Roboto-bold';src:url('../fonts/Roboto-Bold.eot');src:url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Bold.woff2') format('woff2'), url('../fonts/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold.ttf') format('truetype'), url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');font-weight:bold;font-style:normal;}
+@font-face{font-family:'MyriadPro';src:url('../fonts/MyriadPro-Regular.eot');src:url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro-Regular.woff2') format('woff2'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');font-weight:normal;font-style:normal;}
+html{font-size:10px;font-family:'Roboto-reg';}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus{outline:none;}
+button:hover,
+input:hover,
+a:hover,
+textarea:hover{text-decoration:none;}
+.button{color:#ffffff;font-family:'Roboto-bold';font-size:1.5rem;border:3px solid #ffffff;border-radius:5rem;}
+section{padding:5rem 0;}
+.main{padding-bottom:12rem;background:#272e3c url(../img/ind/main/bg.png) center no-repeat;background-size:cover;}
+header .header-logo{text-align:right;padding:0;}
+header .header-btn{background-color:transparent;width:18.5rem;height:5rem;float:right;}
+header .header-text{font-family:'Roboto-reg';font-size:1.4rem;color:#ffffff;text-align:left;}
+header .header-text p{line-height:7rem;}
+header .wrap{display:table;width:100%;height:7rem;}
+header .wrap-block{display:table-cell;vertical-align:middle;text-align:right;height:5rem;width:100%;}
+header .wrap-1{display:table;width:100%;height:8rem;}
+header .wrap-block-1{display:table-cell;text-align:center;vertical-align:middle;}
+header .phone-block{text-align:right;}
+header .phone-link{display:inline-block;font-family:'Roboto-bold';font-weight:700;font-size:1.6rem;height:7rem;line-height:7rem;color:#ffffff;}
+header .phone-link:hover{color:#0b5e8f;}
+header .logo{padding:0;}
+header .line{display:inline-block;height:7rem;line-height:7rem;}
+header .line-1{left:0;}
+header .line-2{padding-left:2rem;}
+header button:hover{background-color:transparent !important;border:3px solid #0b5e8f !important;color:#0b5e8f !important;}
+.main-menu{list-style:none;padding-top:2.5rem;padding-left:0;height:10rem;text-align:center;}
+.main-menu-link{font-family:'Roboto-bold';color:#ffffff !important;font-size:1.6rem;}
+.main-menu-item::before{margin-bottom:-2.5rem;content:'';display:block;-webkit-transition:all 0.3s;transition:all 0.3s;width:3.8rem;height:0.2rem;-webkit-transform:scaleX(0);transform:scaleX(0);background-color:#186796;}
+.main-menu-item:hover::before{-webkit-transform:scaleX(1);transform:scaleX(1);}
+.main-menu li{margin-left:3.5rem;margin-right:2rem;font-size:1.6rem;display:inline-block;}
+.main-menu li .search-btn{background-color:#186796;padding:0.3rem 0.8rem;border:none;border-radius:50rem;outline:none;}
+.main-menu li .search-btn:hover{background:#47c7ff;}
+.main-menu li .search-icon{width:1.4rem;height:1.4rem;}
+body > section.page-header > div > div > ul > li:nth-child(6) > form > input{display:block !important;}
+body > section.page-header > div > div > ul > li:nth-child(6) > form > input:hover{display:block;text-decoration:none !important;border:none !important;background-color:transparent !important;border-bottom:2px solid #272e3c !important;}
+input{outline:none;}
+input[type=search]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;font-family:inherit;font-size:100%;}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button{display:none;}
+input[type=search]{background:#ededed url(../img/search-icon.png) no-repeat 9px center;border:solid 1px #ccc;padding:9px 10px 9px 32px;width:55px;border-radius:10em;-webkit-transition:all .5s;transition:all .5s;}
+input[type=search]:focus{width:130px;background-color:#fff;border-color:#6dcff6;-webkit-box-shadow:0 0 5px rgba(109, 207, 246, 0.5);box-shadow:0 0 5px rgba(109, 207, 246, 0.5);}
+input:-moz-placeholder{color:#999;}
+input::-webkit-input-placeholder{color:#999;}
+#demo-b1 input[type=search]{width:15px; height:15px; padding-left:10px;color:transparent;cursor:pointer;background-color: #0b5e8f;}
+#demo-b1 input[type=search]:hover{background-color:@hover-light;}
+#demo-b1 input[type=search]:focus{width:130px;padding-left:32px;color:#fff;background-color:transparent;cursor:auto;}
+#demo-b1 input:-moz-placeholder{color:transparent;}
+#demo-b1 input::-webkit-input-placeholder{color:transparent;}
+#demo-b2 input[type=search]{width:15px;height:15px;padding-left:10px;color:transparent;cursor:pointer;background-color: #0b5e8f;}
+#demo-b2 input[type=search]:hover{background-color:@hover-light;}
+#demo-b2 input[type=search]:focus{width:130px;padding-left:32px;color:#fff;background-color:transparent;cursor:auto;}
+#demo-b2 input:-moz-placeholder{color:transparent;}
+#demo-b2 input::-webkit-input-placeholder{color:transparent;}
+#demo-b2 {padding:1rem;}
+#demo-b1 {padding:1rem;}
+.main-content{color:#ffffff;}
+.main-content h1{margin-left:3rem;font-family:'Roboto-bold';font-size:6.1rem;padding:18rem 0 4.1rem;}
+.main-content .subtext{margin-left:3rem;font-family:'Roboto-reg';font-size:1.6rem;padding-bottom:3.7rem;line-height:2;}
+.main-content-btn{width:18.4rem;height:5rem;border:none;background:linear-gradient(-45deg, #0b5e8f, #4189a8, #2e76a0);}
+.main-content-btn:hover{background:#47c7ff;}
+.slick-slaider{position:relative;}
+.slick-slaider .slider-item{outline:none;}
+.slider-btn{position:absolute;width:2.2rem;height:4.7rem;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);border:none;background-color:transparent;}
+.slider-dots{list-style:none;text-align:center;padding:0;}
+.slider-dots button{visibility:hidden;}
+.slider-dots li{width:1.3rem;height:1.3rem;display:inline-block;margin:5rem 0.5rem 0;border:2px solid #ffffff;border-radius:50%;}
+.slider-dots .slick-active{background-color:#246f9b;}
+.prev-btn{margin-left:-3.5rem;}
+.next-btn{right:0;margin-right:-1.2rem;}
+
+</style>
+
+    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter47108379 = new Ya.Metrika({ id:47108379, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/47108379" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+  </head>
+
+  <body>
+    <section class="main">
+
+     <header>
+	<div class="container">
+		<div class="header">
+			<div class="row">
+
+
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+					<div class="header-text">
+						<p>Импортно-экспортная компания</p>	
+					</div>			
+				</div>
+
+				<div class="header-logo col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+            <div class="line">
+					    <img class="line-1" src="img/icons/line.png" alt="Линия">
+					  </div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+					  <img class="logo" src="img/ind/header/logo.png" alt="Логотип">
+					</div>
+          <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+            <div class="line">
+					    <img class="line-2" src="img/icons/line.png" alt="Линия">
+					  </div>
+				</div>
+				</div>
+
+				<div class="col-lg-2 col-md-2 col-sm-3 hidden-xs">
+					<div class="phone-block">
+						<a class="phone-link" href="#"><strong>8(961)996-25-03</strong></a>
+					</div>				
+				</div>
+
+				<nav class="navigation-menu js-nav-menu visible-xs hidden-lg hidden-md hidden-sm">
+          <div class="navigation-menu__toggle js-nav-menu-toggle">
+            <span class="navigation-menu__bars"></span>
+          </div>
+          <ul class="menu-list">
+            <li class="menu-list__item"><a class="main-menu-link active" href="about.html">О компании</a></li>
+            <li class="menu-list__item"><a class="main-menu-link" href="services.html">Услугиии</a></li>
+            <li class="menu-list__item"><a class="main-menu-link" href="#news">Новости</a></li>
+            <li class="menu-list__item"><a class="main-menu-link" href="#">Калькулятор</a></li>
+            <li class="menu-list__item"><a class="main-menu-link popup-btn-2" href="#">Контакты</a></li>
+            <li class="menu-list__item"><form id="demo-b1">
+              <input type="search" placeholder="Искать">
+            </form></li>
+            <li class="menu-list__item visible-xs hidden-sm hidden-md hidden-lg"><a class="phone-link" href="#"><strong>8(961)996-25-03</strong></a></li>
+          </ul>
+        </nav>
+
+
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+					<div class="wrap">
+            <div class="wrap-block">
+              <button class="button header-btn btn-default btn-lg popup-btn-2">
+              Заказать звонок
+              </button>
+            </div>
+          </div>
+				</div>
+			</div>  <!-- row -->
+		</div>  <!-- header -->
+	</div> <!-- container -->
+	</header>
+
+
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+
+
+	       <script src="js/wow.min.js"></script>
+	       <script src="js/jquery.maskedinput.min.js"></script>
+
+<script>
+	(function($) {
+	$('.js-nav-menu-toggle').on('click', function() {
+	$(this).parents('.navigation-menu').toggleClass('navigation-menu--open');
+	});
+
+	$('html').on('click', function(e) {
+	if(!$(e.target).closest('.js-nav-menu').length &&
+	($('.js-nav-menu').hasClass('navigation-menu--open'))) {
+	$('.js-nav-menu').removeClass('navigation-menu--open');
+	}
+	});
+	})(jQuery);
+</script>
+
+      <div class="menu">
+        <div class="container">
+         <ul class="main-menu">
+          <li class="main-menu-item"><a class="main-menu-link active" href="#">О компании</a></li>
+          <li class="main-menu-item"><a class="main-menu-link" href="services.html">Услуги</a></li>
+          <li class="main-menu-item"><a class="main-menu-link" href="#news">Новости</a></li>
+          <li class="main-menu-item"><a class="main-menu-link" href="#">Калькулятор</a></li>
+          <li class="main-menu-item"><a class="main-menu-link popup-btn-2" href="#">Контакты</a></li>
+          <li>
+            <form id="demo-b2">
+              <input type="search" placeholder="Искать">
+            </form>
+          </li>
+         </ul>
+        </div>
+       </div>
+
+
+   <div class="main-content">
+   	 <div class="container">
+     <div class="slick-slaider">
+      <div class="slider-item">      	
+       <div class="col-md-6 slider-block">
+        <h1>Грузы из Китая<br>с компанией "BTG"</h1>
+        <h2 class="subtext">Экспорт и импорт грузов из Китая любым видом транспорта.<br>Без переплат и точно в срок!</h2>
+        <button class="button main-content-btn btn-lg popup-btn-1">Быстрая заявка</button>
+       </div>
+      </div>
+      <div class="slider-item">
+       <div class="col-md-6 slider-block">
+        <h1>Широкая география&nbsp;работ</h1>
+        <h2 class="subtext">Доставка грузов из более чем 10 стран любым видом транспорта.<br>Возможность расширения бизнеса!</h2>
+        <button class="button main-content-btn btn-lg popup-btn-1">Быстрая заявка</button>
+       </div>
+      </div>
+      <div class="slider-item">
+       <div class="col-md-6 slider-block">
+        <h1>У нас<br>чёткие сроки</h1>
+        <p class="subtext">Всё будет доставлено вовремя.<br>Любая задержка за наш счет!</p>
+        <button class="button main-content-btn btn-lg popup-btn-1">Быстрая заявка</button>
+       </div>
+      </div>
+       </div>
+     </div>
+   </div>
+
+</section>
+
+<section class="services">
+	<div class="container">
+		<div class="services-blocks">
+		<div class="services-header">
+			<div class="line">
+				<img src="img/icons/line-grey.png" alt="">
+			</div>
+			<h2>Наши услуги</h2>
+			<div class="line">
+				<img src="img/icons/line-grey.png" alt="">
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="services-block wow fadeInUp" data-wow-delay="0.025s">
+						<div class="services-block-img">
+						  <div class="icon1"></div>
+						</div>				
+						<div class="services-block-text">
+						  <p>Международные<br>перевозки</p>
+						  <button class="button services-block-btn popup-btn-2">Подробней</button>
+						</div>				
+				</div>
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="services-block wow fadeInUp" data-wow-delay="0.05s">
+						<div class="services-block-img">
+						  <div class="icon2"></div>
+					  </div>
+						<div class="services-block-text">
+					    <p>Доставка<br>грузов из Китая</p>	
+					    <button class="button services-block-btn popup-btn-2">Подробней</button>
+					  </div>			
+				</div>
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="services-block wow fadeInUp" data-wow-delay="0.075s">
+						<div class="services-block-img">
+							<div class="icon3"></div>
+						</div>											
+						<div class="services-block-text">
+							<p>Таможенное<br>оформление</p>
+							<button class="button services-block-btn popup-btn-2">Подробней</button>
+						</div>										
+				</div>
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="services-block wow fadeInUp" data-wow-delay="0.1s">
+						<div class="services-block-img">
+						  <div class="icon4"></div>
+						</div>
+						<div class="services-block-text">
+						  <p>Контейнерные<br>перевозки</p>	
+						  <button class="button services-block-btn popup-btn-2">Подробней</button>
+						 </div>			
+				</div>
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="services-block wow fadeInUp" data-wow-delay="0.125s">
+						<div class="services-block-img">
+						  <div class="icon5"></div>
+						</div>
+						<div class="services-block-text">
+						  <p>Доставка<br>сборных грузов</p>
+						  <button class="button services-block-btn popup-btn-2">Подробней</button>
+						</div>				
+				</div>
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="services-block wow fadeInUp" data-wow-delay="0.15s">
+						<div class="services-block-img">
+						  <div class="icon6"></div>
+						</div>
+						<div class="services-block-text">
+					    <p>Финансирование<br>поставок</p>
+					    <button class="button services-block-btn popup-btn-2">Подробней</button>
+					  </div>					
+					</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+<section class="buisness">
+	<div class="container">
+		<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			<div class="buisness-block-img wow fadeInLeft">
+				<img src="img/ind/buisness/bg.png" alt="Корабль">
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		<div class="buisness-block-text wow fadeInRight">
+		<h2>"BTG" - Buisness Trans Group</h2>
+		<p class="buisness-block-text-company">Международная компания</p>
+		<p class="buisness-block-text-idea">Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции влечет за <br> собой процесс внедрения и модернизации систем массового <br> участия. Товарищи! постоянное <br> информационно-пропагандистское обеспечение нашей <br> деятельности способствует подготовки и реализации <br> существенных финансовых и административных условий.</p>
+	</div>
+	</div>
+	</div>
+	</div>
+</section>
+
+<section class="news" id="news">
+	<div class="container">
+
+	<div class="news-header">
+		<div class="line">
+			<img src="img/icons/line-grey.png" alt="Линия">
+		</div>
+		<h2>Новости</h2>
+		<div class="line">
+			<img src="img/icons/line-grey.png" alt="Линия">
+		</div>		
+	</div>
+  
+	<div class="row">
+
+		<div class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+			<div class="news-content  wow fadeInUp">
+			<img src="img/ind/news/photo-1.png" alt="Открытие нового направления поставок">
+			<h3>Открытие нового направления поставок</h3>
+			<p>15.09.17</p>
+			</div>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+			<div class="news-content  wow fadeInUp">
+			<img src="img/ind/news/photo-2.png" alt="Открытие нового направления поставок">
+			<h3>Открытие нового направления поставок</h3>
+			<p>15.09.17</p>
+		  </div>
+		</div>
+
+		<div class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+			<div class="news-content  wow fadeInUp">
+			<img src="img/ind/news/photo-3.png" alt="Открытие нового направления поставок">
+			<h3>Открытие нового направления поставок</h3>
+			<p>15.09.17</p>
+		  </div>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+			<div class="news-content  wow fadeInUp">
+			<img src="img/ind/news/photo-4.png" alt="Открытие нового направления поставок">
+			<h3>Открытие нового направления поставок</h3>
+			<p>15.09.17</p>
+		  </div>
+		</div>
+
+		
+	</div>
+	</div>
+</section>
+
+<section class="world">
+	<div class="main-content world-content">
+	 <div class="container">
+	  <div class="slick-slaider">
+	   <div class="slider-item">
+	    <div class="col-lg-9 col-lg-offset-3 slider-block">
+	     <h2>Работаем с экспортом<br>и импортом по всему миру</h2>
+	     <p class="subtext">Наши специалисты помогут вам доставить<br>ваши грузы в любую точку мира</p>
+	     <button class="button main-content-btn btn-lg popup-btn-1">Быстрая заявка</button>
+	    </div>
+	   </div>
+	   <div class="slider-item">
+	    <div class="col-lg-9 col-lg-offset-3 slider-block">
+	     <h2>Работаем с экспортом<br>и импортом по всему миру</h2>
+	     <p class="subtext">Наши специалисты помогут вам доставить<br>ваши грузы в любую точку мира</p>
+	     <button class="button main-content-btn btn-lg popup-btn-1">Быстрая заявка</button>
+	    </div>
+	   </div>
+	   <div class="slider-item">
+	    <div class="col-lg-9 col-lg-offset-3 slider-block">
+	    	<h2>Работаем с экспортом<br>и импортом по всему миру</h2>
+	    	<p class="subtext">Наши специалисты помогут вам доставить<br>ваши грузы в любую точку мира</p>
+	     <button class="button main-content-btn btn-lg popup-btn-1">Быстрая заявка</button>
+	    </div>
+	   </div>
+
+	  </div>
+	 </div> 
+	</div>
+</section>
+
+<section class="partners">
+	<div class="container">
+	  <div class="partners-header">
+	  	<div class="line">
+	  		<img src="img/icons/line-grey.png" alt="Линия">
+	  	</div>
+	  	<h2>Наши партнёры</h2>
+	  	<div class="line">
+	  		<img src="img/icons/line-grey.png" alt="Линия">
+	  	</div>
+	  </div>	
+    <div class="row">
+			<div class="partners-block  wow fadeInUp" data-wow-delay="0.1s">
+				<img src="img/ind/partners/hp.png" alt="HP">
+			</div>
+
+			<div class="partners-block wow fadeInUp" data-wow-delay="0.15s">
+				<img src="img/ind/partners/canon.png" alt="CANON">
+			</div>			
+
+			<div class="partners-block wow fadeInUp" data-wow-delay="0.2s">
+				<img src="img/ind/partners/dell.png" alt="DELL">
+			</div>
+
+			<div class="partners-block wow fadeInUp" data-wow-delay="0.25s">
+				<img src="img/ind/partners/hp.png" alt="HP">
+			</div>
+
+			<div class="partners-block wow fadeInUp" data-wow-delay="0.3s">
+				<img src="img/ind/partners/canon.png" alt="CANON">
+			</div>
+   </div>
+</div>
+</section>
+
+<section class="request">
+	<div class="container">
+
+	<div class="request-header">
+		<h2>Запрос на услуги</h2>
+	</div>
+	<form class="request-form form" action="mailer/smart.php" id="contact5" method="post">
+
+		<div class="row">
+			<div class="col-lg-4 col-lg-offset-2 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+				<!-- <span><img src="img/ind/request/road.png" alt=""></span> -->
+				<input type="text" placeholder="Откуда" class="road" required name="user_from" id="from2">
+			</div>
+			<div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+			<!-- 	<span><img src="img/ind/request/road.png" alt=""></span> -->
+				<input type="text" placeholder="Куда" class="road" required name="user_to" id="to2">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4 col-lg-offset-2 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+				<input required type="text" name="user_name" id="name6" placeholder="Как Вас зовут?">
+			</div>
+			<div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+				<input type="tel" placeholder="Номер телефона" required id="phone4" name="user_phone">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		    <button class="button main-content-btn btn-lg">Получить расчет</button>
+		  </div>
+		</div>
+		</form>
+		<p class="comment">Нажав кнопку "Получить расчет", я даю согласие на обработку моих персональных данных.</p>
+  </div>
+</section>
+
+<footer>
+	<div class="footer">
+	<div class="container">
+	<div class="row">
+		<div class="col-lg-2 col-md-2 col-sm-1 col-xs-12">
+		<img class="footer-logo" src="img/ind/footer/logo.png" alt="Логотип">
+		</div>
+		<div class="col-lg-7 col-md-7 col-sm-9 hidden-xs">
+		<div class="menu">
+		      <!-- <div class="container"> -->
+		       <ul class="main-menu footer-menu">
+		        <li class="main-menu-item footer-menu-item"><a class="main-menu-link active" href="#">О компании</a></li>
+		        <li class="main-menu-item footer-menu-item"><a class="main-menu-link" href="services.html">Услуги</a></li>
+		        <li class="main-menu-item footer-menu-item"><a class="main-menu-link" href="#">Новости</a></li>
+		        <li class="main-menu-item footer-menu-item"><a class="main-menu-link" href="#">Калькулятор</a></li>
+		        <li class="main-menu-item footer-menu-item"><a class="main-menu-link" href="#">Контакты</a></li>
+		       </ul>
+		   <!--    </div> -->
+		</div>
+		</div>
+		<div class="footer-makes col-lg-3 col-md-3 col-sm-2 col-xs-12">
+		<p class="footer-make">Создание сайта:</p>
+		<img class="footer-ipc" src="img/ind/footer/ipc.png" alt="ИПР">
+		</div>
+	</div>
+	</div>
+	</div>
+</footer>
+
+
+<!-- Модальные окна -->
+
+
+<!-- popup 1. больше -->
+<div class="popup popup-1">       <!-- модальное окно с затемнением -->
+  <div class="popup-dialog">    <!-- само белое модальное окно -->
+    <div class="popup-content">  <!-- содержимое модального окна -->
+      <button class="popup-close">&times;</button>     <!-- кнопка закрыть -->
+      <h4 class="popup-header">                 <!-- заголовок -->
+        Быстрая заявка</h4>
+      <div class="request-form popup-form">     <!-- сделали реквест форм, потому что окно похоже на нашу форму, а для нее стили мы уже прописали -->
+        <form class="form" action="mailer/smart.php" id="contact1" method="post">
+          <div class="row">
+          			<div class="col-lg-6 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+          				<!-- <span><img src="img/ind/request/road.png" alt=""></span> -->
+          				<input type="text" placeholder="Откуда" class="road" required name="user_from" id="from1">
+          			</div>
+          			<div class="col-lg-6 col-md-6 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+          				<!-- <span><img src="img/ind/request/road.png" alt=""></span> -->
+          				<input type="text" placeholder="Куда" class="road" required name="user_to" id="to1">
+          			</div>
+          		</div>
+          		<div class="row">
+          			<div class="col-lg-6 col-md-6 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+          				<input required type="text" name="user_name" id="name1" placeholder="Как Вас зовут?">
+          			</div>
+          			<div class="col-lg-6 col-md-6 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+          				<input type="tel" placeholder="Номер телефона" required id="phone1" name="user_phone">
+          			</div>
+          		</div>
+          		<div class="row">
+          			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          		    <button class="button main-content-btn btn-lg popup-button" onclick="yaCounter47108379.reachGoal('popup-metr'); return true;">Заказать звонок</button>
+          		  </div>
+          		</div>
+          		<p class="comment">Нажав кнопку "Заказать звонок",<br> я даю согласие на обработку моих персональных данных.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup-2">       <!-- модальное окно с затемнением -->
+  <div class="popup-dialog">    <!-- само белое модальное окно -->
+    <div class="popup-content">  <!-- содержимое модального окна -->
+      <button class="popup-close">&times;</button>     <!-- кнопка закрыть -->
+      <h4 class="popup-header">                 <!-- заголовок -->
+        Заказать звонок</h4>
+      <div class="request-form popup-form">     <!-- сделали реквест форм, потому что окно похоже на нашу форму, а для нее стили мы уже прописали -->
+        <form class="form" action="mailer/smart.php" id="contact2" method="post">
+          		<div class="row">
+          			<div class="col-lg-6 col-md-6 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+          				<input required type="text" name="user_name" id="name2" placeholder="Как Вас зовут?">
+          			</div>
+          			<div class="col-lg-6 col-md-6 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+          				<input type="tel" placeholder="Номер телефона" required id="phone2" name="user_phone">
+          			</div>
+          		</div>
+          		<div class="row">
+          			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          		    <button class="button main-content-btn btn-lg popup-button" onclick="yaCounter47108379.reachGoal('popup-metr'); return true;">Заказать звонок</button>
+          		  </div>
+          		</div>
+          		<p class="comment">Нажав кнопку "Заказать звонок",<br> я даю согласие на обработку моих персональных данных.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<link rel="stylesheet" href="css/animate.min.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!-- Стили bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+<!-- Стили для slick slaider -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script src="slick/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script>
+      jQuery(function($){
+         $("#phone1").mask("+7(999) 999-99-99");
+         $("#phone2").mask("+7(999) 999-99-99");
+         $("#phone3").mask("+7(999) 999-99-99");
+         $("#phone4").mask("+7(999) 999-99-99");
+         $("#phone5").mask("+7(999) 999-99-99");
+
+      });
+    </script>
+
+    <script>
+      new WOW().init();
+    </script>
+
+    <script>
+        $('form').submit(function(event) {
+            event.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "mailer/smart.php",
+                data: $(this).serialize()
+            }).done(function() {
+                $(this).find("input").val("");
+                alert("Сообщение успешно отправлено");
+                $("form").trigger("reset");
+                $(".popup").hide();
+            });
+            return false;
+        });
+    </script>
+    <script>
+      $(document).ready(function(){
+       $('.popup-btn-1').on('click', function (event) {
+        event.preventDefault();
+        $('.popup-1').fadeIn();
+       });
+       $('.popup-close').on('click', function(event) {
+         event.preventDefault();
+         $('.popup-1').fadeOut();
+       });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+       $('.popup-btn-2').on('click', function (event) {
+        event.preventDefault();
+        $('.popup-2').fadeIn();
+       });
+       $('.popup-close').on('click', function(event) {
+         event.preventDefault();
+         $('.popup-2').fadeOut();
+       });
+      });
+    </script>
+    <script>
+     $(document).ready(function(){
+       $('.slick-slaider').slick({
+         dots: true,
+         dotsClass: "slider-dots",
+         prevArrow: '<button type="button" class="slider-btn prev-btn"><img src="img/icons/prev.png" alt="prev" /></button>',
+       nextArrow: '<button type="button" class="slider-btn next-btn"><img src="img/icons/next.png" alt="next"/></button>',
+       });
+     });
+    </script>
+    <script>
+    	$(document).ready(function(){
+    	$('.partners-slider').slick({
+    	 infinite: true,
+    	 slidesToShow: 5,
+    	 slidesToScroll: 1,
+    	  responsive: [                /*как сладер будет вести себя на разных экранах, значения на экранах МЕНЬШЕ ЧЕМ...*/ 
+
+    	     {
+    	       breakpoint: 767,
+    	       settings: {
+    	         slidesToShow: 1,
+    	         slidesToScroll: 1,
+    	         prevArrow: none,
+    	         nextArrow: none,
+    	       }
+    	     }
+    	     // You can unslick at a given breakpoint now by adding:
+    	     // settings: "unslick"
+    	     // instead of a settings object
+    	   ]
+    	 });
+    	});
+    </script>
+    <script>$(window).scroll(function () {
+    var menu = $("nav");
+    if ($(window).scrollTop() > 100) menu.fadeIn(300); else menu.hide();
+    });
+    </script>
+
+
+</body>
+</html>
+
+<!--  active rellax" data-rellax-speed="-5" -->
