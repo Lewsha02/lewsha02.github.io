@@ -1,0 +1,216 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+.main-header
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	background-position: center
+	background-size: cover
+	height: 100vh
+	min-height: 560px
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		background-color: #222
+		opacity: .5
+
+.header-top
+	color: #fff
+	padding-top: 50px
+
+.logo
+	font-size: 20px
+	font-weight: 300
+	color: $light
+
+.header-menu
+	float: right
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		li
+			display: inline-block
+			a
+				color: $light
+				text-decoration: none
+				font-size: 16px
+				padding: 0 20px
+				transition: color .15s
+				&:hover
+					color: #fff
+			&.active-item
+				a
+					font-weight: bold
+
+.header-text
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	text-align: center
+	align-items: center
+	position: relative
+	margin-top: 170px
+	.h1
+		font-size: 38px
+		color: $light
+		font-weight: 300
+		line-height: 52px
+
+section
+	padding: 50px 0
+
+.section-top
+	.h2
+		width: 100%
+		text-align: center
+		color: $dark
+		font-weight: normal
+		line-height: 28px
+		font-size: 32px
+
+.story
+	margin-top: 80px
+
+.vika-photo
+	width: 350px
+	height: 350px
+	img
+		display: block
+		width: 100%
+		height: 100%
+		border-radius: 50%
+
+.story-text
+	.h4
+		font-size: 24px
+		font-weight: 300
+		color: $dark
+		line-height: 28px
+		margin: 0
+		padding: 0
+		margin-bottom: 45px
+	p
+		font-size: 16px
+		line-height: 25px
+		margin: 0
+		padding: 0
+		width: 440px
+
+.section-teacher
+	position: relative
+	padding-bottom: 200px
+	&::before
+		content: ''
+		height: 88%
+		position: absolute
+		right: 0
+		bottom: 0
+		width: 40%
+		background-image: url(../img/teacher.jpg)
+		background-position: center
+		background-size: cover
+
+.teacher-text
+	margin-top: 100px
+	p
+		font-size: 16px
+		line-height: 25px
+		margin: 0
+		padding: 0
+		width: 440px
+		margin-bottom: 60px
+
+.advantages-header-text
+	text-align: left
+	justify-content: flex-start
+	font-weight: normal
+	width: 540px
+	.h2
+		font-size: 24px
+		color: $light
+		line-height: 33px
+
+.section-advantages
+	background-color: #141517
+	padding-top: 10px
+
+.advantage-icon
+	margin-top: 40px
+
+.advantage-icon
+	width: 55px
+	height: 55px
+	background: $accent
+	border-radius: 50%
+	position: relative
+	img
+		display: block
+		width: 80%
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+.advantage-header
+	font-size: 23px
+	font-weight: bold
+	color: #fff
+	margin-top: 20px
+
+.advantage-descr
+	font-size: 16px
+	line-height: 26px
+	color: #aaafb4
+	margin: 0
+	padding: 0
+	margin-top: 10px
+
+.limitations-header-text
+	text-align: left
+	.h2
+		color: $light
+		font-size: 24px
+		max-width: 730px
+		line-height: 33px
+		font-weight: normal
+
+.limitations-item
+	margin-top: 40px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-around
+
+.limitations-icon
+	flex-basis: 30%
+
+.limitations-text
+	flex-basis: 100%
+
+.limitations-header
+	font-weight: bold
+	font-size: 23px
+	color: $accent
+
+.limitations-descr
+	margin: 0
+	padding: 0
+	margin-top: 10px
+	color: #aaafb4
+	line-height: 26px
+
+@import "media" // Всегда в конце
