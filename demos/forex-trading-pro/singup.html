@@ -1,82 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8" />
-		<!-- <base href="/"> -->
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
 
-		<title></title>
-		<meta name="description" content="Startup HTML template OptimizedHTML 5" />
+    <title></title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5" />
 
-		<meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width" />
 
-		<link rel="icon" href="images/favicon.png" />
-		<meta property="og:image" content="images/dist/preview.jpg" />
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/dist/preview.jpg" />
 
-		<link rel="stylesheet" href="css/main.min.css" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-	<body>
+  <body>
+    <header class="signup-header">
+      <a href="index.html" class="signup-header__logo">
+        <img src="images/dist/logo-forex.svg" alt="forex trading pro logo" />
+      </a>
+    </header>
 
-		<header class="signup-header">
-			<a href="index.html" class="signup-header__logo">
-				<img src="images/dist/logo-forex.svg" alt="forex trading pro logo">
-			</a>
-		</header>
+    <section class="section-signup">
+      <div class="section-signup__bg">
+        <img
+          class="signup-illustration__blur"
+          src="images/dist/blur.png"
+          alt="blur picture"
+        />
+        <img class="signup-illustration__body" src="images/dist/sing-up-now.svg" alt="signup illustration" />
+        <img
+          class="signup-illustration__kristal"
+          id="signup-illustration-kristal"
+          src="images/dist/kristall.svg"
+          alt="kristal icon"
+        />
+        <img
+          class="signup-illustration__star"
+          id="signup-illustration-star"
+          src="images/dist/star.svg"
+          alt="blue star icon"
+        />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="offset-lg-2 col-lg-8">
+            <form class="signup-form">
+              <h3 class="h3">Sing up now</h3>
 
-		<section class="section-signup">
-			<div class="section-signup__bg">
-				<img class="signup-illustration__blur" src="images/dist/blur.png" alt="blur picture">
-				<img src="images/dist/sing-up-now.svg" alt="signup illustration">
-				<img class="signup-illustration__kristal" id="signup-illustration-kristal" src="images/dist/kristall.svg" alt="kristal icon">
-				<img class="signup-illustration__star" id="signup-illustration-star" src="images/dist/star.svg" alt="blue star icon">
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="offset-lg-2 col-lg-8">
-						<form class="signup-form">
-							<h3 class="h3">Sing up now</h3>
+              <input
+                name="first name"
+                type="text"
+                placeholder="First Name"
+                required
+              />
+              <input
+                name="last name"
+                type="text"
+                placeholder="Last Name"
+                required
+              />
+              <input name="e-mail" type="email" placeholder="E-mail" required />
+              <input
+                name="password"
+                type="password"
+                placeholder="Passowrd"
+                required
+              />
+              <div class="conf-check">
+                <input
+                  class="inp-cbx"
+                  id="cbx"
+                  type="checkbox"
+                  style="display: none"
+                  name="confidentiality"
+                  required
+                />
+                <label class="cbx" for="cbx"
+                  ><span>
+                    <svg width="16px" height="14px" viewbox="0 0 12 10">
+                      <polyline
+                        points="1.5 6 4.5 9 10.5 1"
+                      ></polyline></svg></span
+                  ><span class="conf-text"
+                    >I agree to the terms and conditions*</span
+                  ></label
+                >
+              </div>
+              <button class="button form-button" type="submit">Signup</button>
+              <span class="form-subtext"
+                >Already a user? <a href="#">Click here to Login</a></span
+              >
+              <span class="form-subtext"
+                >Need to verify your email? <a href="#">Verify Email</a></span
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-							<input name="first name" type="text" placeholder="First Name" required />
-							<input name="last name" type="text" placeholder="Last Name" required />
-							<input name="e-mail" type="email" placeholder="E-mail" required />
-							<input name="password" type="password" placeholder="Passowrd" required />
-							<div class="conf-check">
-								<input
-									class="inp-cbx"
-									id="cbx"
-									type="checkbox"
-									style="display: none"
-									name="confidentiality"
-									required
-								/>
-								<label class="cbx" for="cbx"
-									><span>
-										<svg width="16px" height="14px" viewbox="0 0 12 10">
-											<polyline
-												points="1.5 6 4.5 9 10.5 1"
-											></polyline></svg></span
-									><span class="conf-text">I agree to the terms and conditions*</span></label
-								>
-							</div>
-							<button class="button form-button" type="submit">Signup</button>
-							<span class="form-subtext">Already a user? <a href="#">Click here to Login</a></span>
-							<span class="form-subtext">Need to verify your email? <a href="#">Verify Email</a></span>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
+    <footer
+      class="signup-footer"
+      style="background-image: url('images/dist/footer-2.svg')"
+    >
+      <img src="images/dist/footer-mobile.svg" alt="picture of footer" />
+    </footer>
 
-		<footer class="signup-footer" style="background-image: url('images/dist/footer-2.svg');">
-			<img src="images/dist/footer-mobile.svg" alt="picture of footer">
-		</footer>
-
-
-		<script src="js/app.min.js"></script>
-	</body>
+    <script src="js/app.min.js"></script>
+  </body>
 </html>
